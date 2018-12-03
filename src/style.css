@@ -1,0 +1,185 @@
+html{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+}
+#container-global-menu{
+    font-size: 62.5%;
+
+}
+#global-menu {
+    position: fixed;
+    color:red;
+    top: 0;
+    height: 25px;
+    width: 100%;
+    background-color: #572600;
+    z-index:100;
+    margin-left: 0;
+    font-family: "Open Sans","Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+
+
+}
+
+.navbar-fixed-top {
+    top: 25px;
+}
+
+.globale_menubalk #items .website-text {
+    display: none;
+}
+
+@media screen and (min-width: 520px) {
+
+    /* Hopper en Groepsamdin */
+    .globale_menubalk #items .website-text:nth-child(3),
+    .globale_menubalk #items .website-text:nth-child(4) {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 786px) {
+
+  /* .Be en .Org */
+  .globale_menubalk #items .website-text:nth-child(2),
+  .globale_menubalk #items .website-text:nth-child(5) {
+      display: inline;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+
+    /* Enkel personeels-links verbergen */
+    .globale_menubalk #items .website-text:nth-child(-n+9) {
+        display: inline;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+
+    /* Alle links tonen */
+    .globale_menubalk #items .website-text {
+        display: inline;
+    }
+}
+
+#global-menu .container {
+    position: relative;
+    overflow: visible;
+    padding: 0;
+}
+
+.globale_menubalk {
+    height: auto;
+    padding: 0 1.5vw;
+    min-height: 25px;
+}
+
+.block-sgv_globale_menubalk .title {
+    display: none;
+}
+
+.globale_menubalk {
+    position: relative;
+    height: 25px;
+    width: 100%;
+    z-index: 997;
+    color: white;
+    font-size: 9pt;
+}
+
+.globale_menubalk #items {
+    width: 100%;
+    margin: 0;
+    padding: 2px 0 0 0;
+    overflow: hidden;
+}
+
+.globale_menubalk #items li {
+    float: left;
+    height: 20px;
+    margin: 2px 12px 0 0;
+    line-height: 17px;
+    font-size: 1.2rem;
+    list-style-type: none;
+}
+
+#admin-menu ul a,
+.globale_menubalk #items li a,
+.globale_menubalk #account a {
+    color: #FFF;
+    text-decoration: none;
+    -webkit-transition: color .25s linear;
+    transition: color .25s linear;
+}
+
+#admin-menu ul a:hover,
+.globale_menubalk #items a:hover,
+.globale_menubalk #account a:hover {
+    color: #BDD732;
+}
+
+.globale_menubalk #items #item_sgv,
+.globale_menubalk #items #item_facebook,
+.globale_menubalk #items #item_twitter,
+.globale_menubalk #items #item_instagram {
+    display: inline-block;
+    margin: 0;
+    margin-top: 1px;
+    width: 15px;
+    height: 15px;
+    font-size: 1.5rem;
+    background-repeat: no-repeat;
+    text-indent: -99999px;
+}
+
+.globale_menubalk #items li:last-child {
+    margin-right: 0;
+}
+
+.globale_menubalk #items li a[href^="https://groepsadmin.scoutsengidsenvlaanderen.be/groepsadmin"] {
+    font-weight: bold;
+}
+
+.globale_menubalk #items #item_sgv {
+    background-image: url('https://www.scoutsengidsenvlaanderen.be/files/algemeen/menubalk/balk_sprites_sgv.png');
+}
+
+.globale_menubalk #account {
+    position: fixed;
+    top: 3px;
+    height: 22px;
+    right: 1vw;
+    margin: 0;
+    padding: 0 0 2px;
+    line-height: 1.5;
+    text-align: right;
+}
+
+.globale_menubalk #account span {
+    float: none;
+}
+
+.globale_menubalk #account #item_aanmelden {
+    margin-right: 5px;
+}
+
+.globale_menubalk #account #item_afmelden a {
+    /* via event ipv. via link, dus standaard geen pointer */
+    cursor: pointer;
+}
+
+.globale_menubalk #account #item_username,
+.globale_menubalk #account #item_help,
+.globale_menubalk #account #item_afmelden {
+    margin-left: 12px;
+}
+
+.globale_menubalk #items #item_facebook,
+.globale_menubalk #items #item_twitter,
+.globale_menubalk #items #item_instagram {
+    background-position: 0 -15px;
+}
